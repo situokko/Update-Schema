@@ -9,3 +9,7 @@ A bit similar than Liquibase for Java, but not as feature-rich.
 1. INSERT/UPDATE/CREATE TABLE/ALTER TABLE etc commands should be included here, Note if you need to delete or change existing rows that their IDs will not necessary be same between each environment
 1. If you create or change functions/stored-procedures always write them into separate file, and only create -- #include filename -reference into this change-file, so that you can have separate version control for those files and their changes.
 1. Write included function-files so that in the beginning they are dropped if they exist, and the declaration ends to "GO"
+
+
+#TODO
+1. Does not support transactions yet, so if there is anything wrong with the .sql scripts or running the command against the database, error will be thrown and the schema is left in the state it is.
