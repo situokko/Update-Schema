@@ -11,5 +11,5 @@ A bit similar than Liquibase for Java, but not as feature-rich.
 1. Write included function-files so that in the beginning they are dropped if they exist, and the declaration ends to "GO"
 
 
-#TODO
+## TODO
 1. Does not support transactions yet, so if there is anything wrong with the .sql scripts or running the command against the database, error will be thrown and the schema is left in the state it is.
